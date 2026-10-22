@@ -1,0 +1,22 @@
+[
+  {
+    "name": "nunito",
+    "source": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/nunito/Nunito%5Bwght%5D.ttf",
+    "commit": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "license": "OFL-1.1",
+    "licenseSource": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/nunito/OFL.txt",
+    "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+    "modifications": "None",
+    "obligations": "Retain copyright and full OFL license; font remains OFL; do not sell font by itself."
+  },
+  {
+    "name": "inter",
+    "source": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+    "commit": "45e3d5269e4a17d823f6d84470bc084dc5ae46f6",
+    "license": "OFL-1.1",
+    "licenseSource": "https://raw.githubusercontent.com/google/fonts/45e3d5269e4a17d823f6d84470bc084dc5ae46f6/ofl/inter/OFL.txt",
+    "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "modifications": "None",
+    "obligations": "Retain copyright and full OFL license; font remains OFL; do not sell font by itself."
+  }
+]

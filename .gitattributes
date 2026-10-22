@@ -1,0 +1,14 @@
+* text=auto
+*.cs text eol=crlf
+*.csproj text eol=lf
+*.props text eol=lf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+# Preserve upstream licenses and bundled fonts byte-for-byte.
+licenses/** -text -whitespace
+src/ClockWidget/Assets/Fonts/** -text -whitespace
+*.png binary
+*.ico binary
+*.ttf binary
