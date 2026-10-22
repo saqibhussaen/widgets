@@ -1,4 +1,11 @@
-﻿# Revision 0.5 validation — 2026-10-22
+﻿# Public Windows CI — Widgets, 2026-10-22
+
+- Personal repository: https://github.com/saqibhussaen/widgets . Authenticated push used the selected personal account and repository-local noreply author identity; old local Git login was removed. Global Git configuration was preserved.
+- CI run https://github.com/saqibhussaen/widgets/actions/runs/39834275760 passed all **43 tests**, license checks and self-contained x64 packaging for source commit c11c4bae4f8042d506d7d8599b99f476b8b9f34e.
+- Published unsigned prerelease: https://github.com/saqibhussaen/widgets/releases/tag/preview-0.5.0-1 . Its ZIP and SHA-256 came directly from that CI artifact; verified hash a0d89ae7cf78396dc478bbf5883d71d8043d34e3e2f228f8e92acdad98f6110a.
+- This resolves the missing full-suite result in an allowed CI environment. It does not change local Windows publisher verification or establish real player/shell behavior. Free SignPath application is being prepared; no certificate/approval is claimed.
+
+# Revision 0.5 validation — 2026-10-22
 
 - Build succeeds with zero warnings/errors, including GSMTC projections and original Core Audio interop; no new dependencies.
 - Current review suite: 22 passed, 21 unable to execute because Windows Application Control blocks ClockWidget.dll (0x800711C7). The process reports those as failures; they are not passing tests. Core custom-text migration/default values/theme privacy checks passed. Media fake-service/native/WPF tests requiring the app assembly are blocked.

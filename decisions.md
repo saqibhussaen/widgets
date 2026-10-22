@@ -207,3 +207,10 @@ The review output passed all 36 tests. The standard output runner was subsequent
 - Choice: product/UI name Widgets, personal repository saqibhussaen/widgets, managed app output Widgets.exe/Widgets.dll and portable Widgets-win-x64.zip. Signing application and product/version metadata follow that name.
 - Reasoning: describes the broader utility while keeping individual clock/weather/media sections clear.
 - Consequences: preserve internal ClockWidget namespaces, font bridge/core filenames, existing profile directory, launch-at-sign-in registry key and single-instance identity for compatibility. Current installed legacy version stays working pending a trusted new release. No settings are moved or discarded.
+
+## D027 — Describe Widgets as an evolving app
+- Date: 2026-10-22. Status: accepted.
+- Context: user wants the description to cover future widgets and small customization improvements, rather than imply the app stops at clock/weather/media.
+- Choice: describe current features and state that additional small widgets, customization options and improvements are planned for future updates. Apply consistently to README, GitHub project description and signing application.
+- Reasoning: keeps the product broad enough to grow without representing roadmap items as shipped capabilities.
+- Consequences: no release schedule or unimplemented feature is promised. The current preview and its limitations remain explicit.

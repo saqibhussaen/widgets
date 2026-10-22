@@ -1,6 +1,6 @@
 ﻿# Widgets
 
-An original Windows 11 widgets app with a customizable clock, date, weather, local themes and optional media controls.
+An original Windows 11 widgets app with a customizable clock, date, weather, local themes and optional media controls. Widgets is designed to grow over time, with additional small desktop widgets, more customization options and other improvements planned for future updates. These additions are a roadmap, not features available in the current preview.
 
 Version 0.5 adds Custom Text, updated Default appearance, and an optional first media toolbar. Version 0.4 added Clock, Date, Weather, Settings and About sections; independent time/date/weather/city visibility; inline resizable AM/PM; and saved appearance themes. Display selection, movement lock and immediate autosave remain available.
 
