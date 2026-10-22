@@ -221,3 +221,6 @@ The review output passed all 36 tests. The standard output runner was subsequent
 - Choice: submit Widgets with the personal repository, actual unsigned CI-built prerelease, successful 43-test Windows run, truthful new-project reputation statement and future-widgets description. Leave optional marketing off.
 - Reasoning: provides verifiable source/build/release evidence without claiming established adoption or an existing signing partnership.
 - Consequences: website displayed Form submitted and Thank you, we'll be in touch soon. No certificate or signing approval has been received; current unsigned app restrictions remain. Keep application contact details and screenshot evidence outside public source. Maintainer MFA and manual release approval remain requirements before signing access/use.
+
+### Signing metadata follow-up
+Inspection of the actual CI artifact showed that .NET appended the Git commit to managed ProductVersion while the native DLL used 0.5.0. Directory.Build.props now disables that informational-version suffix for subsequent builds, so all original signing targets can enforce the same product version. CI/release provenance retains the source commit separately. The initial unsigned preview is preserved as built; it is not a signed artifact.

@@ -186,3 +186,5 @@ Directory.Build.props supplies the shared version and product metadata. scripts/
 ## Widgets branding compatibility
 
 The application assembly name is Widgets and the shared product name is Widgets. Project/source paths, ClockWidget.Core.dll, ClockFont.dll, the existing local profile and named single-instance objects remain unchanged to retain compatibility. scripts/build.ps1 packages Widgets-win-x64.zip; verify-licenses.ps1 reads Widgets.runtimeconfig.json and Widgets.deps.json. Branding changes do not establish a publisher signature.
+
+Managed informational versions omit the automatic Git revision suffix so their ProductVersion matches the native VERSIONINFO value. Build provenance remains recorded by the GitHub CI commit/run and release tag; the initial unsigned preview retains its original metadata and is not presented as signed.

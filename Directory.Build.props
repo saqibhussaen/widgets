@@ -6,6 +6,8 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NuGetAudit>true</NuGetAudit>
     <Version>0.5.0</Version>
+    <!-- CI provenance is retained in GitHub; signing expects the same product version in managed and native binaries. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Product>Widgets</Product>
     <Company>Saqib Hussain</Company>
     <Copyright>Copyright © 2026 Saqib Hussain</Copyright>
