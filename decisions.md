@@ -214,3 +214,10 @@ The review output passed all 36 tests. The standard output runner was subsequent
 - Choice: describe current features and state that additional small widgets, customization options and improvements are planned for future updates. Apply consistently to README, GitHub project description and signing application.
 - Reasoning: keeps the product broad enough to grow without representing roadmap items as shipped capabilities.
 - Consequences: no release schedule or unimplemented feature is promised. The current preview and its limitations remain explicit.
+
+## D028 — Submit the free signing application with explicit consent
+- Date: 2026-10-22. Status: submitted; provider review pending.
+- Context: user selected the free route, provided private contact details for SignPath and explicitly approved the required conduct/privacy boxes and submission. User completed the human-verification challenge.
+- Choice: submit Widgets with the personal repository, actual unsigned CI-built prerelease, successful 43-test Windows run, truthful new-project reputation statement and future-widgets description. Leave optional marketing off.
+- Reasoning: provides verifiable source/build/release evidence without claiming established adoption or an existing signing partnership.
+- Consequences: website displayed Form submitted and Thank you, we'll be in touch soon. No certificate or signing approval has been received; current unsigned app restrictions remain. Keep application contact details and screenshot evidence outside public source. Maintainer MFA and manual release approval remain requirements before signing access/use.

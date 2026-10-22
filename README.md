@@ -92,4 +92,4 @@ This is an initial implementation: exact in-taskbar placement, artwork panel, vo
 
 ## Code signing policy
 
-We are preparing an application for free SignPath Foundation signing; approval is pending and current artifacts are unsigned. Read the [Code signing policy](docs/CODE_SIGNING_POLICY.md), [privacy policy](docs/PRIVACY.md), and [publisher-signing status](docs/SIGNING.md). No signed release or immediate Windows unblock is promised.
+We submitted an application for free SignPath Foundation signing on 2026-10-22; approval is pending and current artifacts are unsigned. Read the [Code signing policy](docs/CODE_SIGNING_POLICY.md), [privacy policy](docs/PRIVACY.md), and [publisher-signing status](docs/SIGNING.md). No signed release or immediate Windows unblock is promised.

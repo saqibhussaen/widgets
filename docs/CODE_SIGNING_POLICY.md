@@ -1,6 +1,6 @@
 ﻿# Code signing policy
 
-Status: applying for the free SignPath Foundation open-source program. No approval,
+Status: application submitted to the free SignPath Foundation open-source program on 2026-10-22; review is pending. No approval,
 certificate or signed release is claimed yet. Current release artifacts are unsigned.
 
 ## Project and responsible roles
