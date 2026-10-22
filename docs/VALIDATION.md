@@ -1,4 +1,10 @@
-﻿# Public Windows CI — Widgets, 2026-10-22
+﻿# Local Sandbox trial preparation — 2026-10-23
+
+- User approved enabling Windows Sandbox for an isolated media trial. The system reports a hypervisor present. DISM enabled Containers-DisposableClientVM with /All /NoRestart and returned 3010: success, restart required. No restart was initiated.
+- Prepared the local trial from the checksum-verified initial CI package. Its XML parses, maps only the trial payload read-only and disables clipboard/microphone/webcam/printer sharing. Synthetic guest settings enable media and disable weather/location; host settings are not copied.
+- Sandbox launch and real media controls remain **not tested** until after restart. Guest controls cannot control host playback; a browser/player must run inside Sandbox. The host publisher-signing restriction is unchanged.
+
+# Public Windows CI — Widgets, 2026-10-22
 
 - Personal repository: https://github.com/saqibhussaen/widgets . Authenticated push used the selected personal account and repository-local noreply author identity; old local Git login was removed. Global Git configuration was preserved.
 - CI run https://github.com/saqibhussaen/widgets/actions/runs/39834275760 passed all **43 tests**, license checks and self-contained x64 packaging for source commit c11c4bae4f8042d506d7d8599b99f476b8b9f34e.

@@ -224,3 +224,11 @@ The review output passed all 36 tests. The standard output runner was subsequent
 
 ### Signing metadata follow-up
 Inspection of the actual CI artifact showed that .NET appended the Git commit to managed ProductVersion while the native DLL used 0.5.0. Directory.Build.props now disables that informational-version suffix for subsequent builds, so all original signing targets can enforce the same product version. CI/release provenance retains the source commit separately. The initial unsigned preview is preserved as built; it is not a signed artifact.
+
+## D029 — Prepare an isolated media trial before signing approval
+- Date: 2026-10-23. Status: prepared; Windows feature enabled, restart pending.
+- Context: user wants to try media controls now and explicitly approved setting up Windows Sandbox after its separation from host playback and potential restart were explained.
+- Alternatives: wait for signing; test in an isolated Windows desktop. Host publisher-verification/security settings remain unchanged.
+- Choice: prepare an ignored local trial from the checksum-verified 43-test CI artifact, with a read-only payload mapping and separate guest settings. Enable media; disable weather/location, microphone/webcam, clipboard and printer sharing. Network remains available for a guest browser/player.
+- Reasoning: tests genuine Windows media sessions in a disposable environment without installing the blocked preview over the working app or copying personal settings.
+- Consequences: it cannot control host desktop media; the player must run inside Sandbox. DISM enabled Containers-DisposableClientVM with /All /NoRestart and returned 3010 (restart required). No restart was initiated and no Sandbox/media behavior is claimed tested yet. Local trial paths/configs are under ignored artifacts, not public source.
